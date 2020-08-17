@@ -1,9 +1,9 @@
 {
   "name": "dipasqua-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My standard setup to start a React App",
   "main": "App.js",
-  "bin" : { "dipasqua-app" : "./cli.js" },
+  "bin" : { "dipasqua-app" : "./App.js" },
   "scripts": {
     "build": "webpack --config ./webpack.config.js --mode production",
     "build:dll": "webpack --config ./webpack.dll.config.js --mode production",
