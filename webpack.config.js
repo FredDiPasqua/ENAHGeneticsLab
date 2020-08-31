@@ -16,7 +16,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].[hash].js',
-        publicPath: 'http://localhost:3001/',  //IMPORTANTE  para hacer deploy hay que configurar esto
+        publicPath: 'http://localhost:5500/',  //IMPORTANTE  para hacer deploy hay que configurar esto
         chunkFilename: 'js([id].[chunkhash].js'
     },
     resolve: {
@@ -77,13 +77,13 @@ module.exports = {
             filename: 'css/[name].[hash].css',
             chunkFilename: 'css/[id].[hash].css'
         }),
-        // new webpack.DllReferencePlugin({
-        //     manifest: require('./modules-manifest.json')    // no funciona al deploy
-        // }),
+        new webpack.DllReferencePlugin({
+            manifest: require('./modules-manifest.json')    // no funciona al deploy
+        }),
         new AddAssetHtmlPlugin({
             filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
             outputPath: 'js',
-            publicPath: "https://localhost:3001"      // https://localhost:3001
+            publicPath: "https://localhost:5500"      // https://localhost:3001
 
         }),
         new CleanWebpackPlugin({

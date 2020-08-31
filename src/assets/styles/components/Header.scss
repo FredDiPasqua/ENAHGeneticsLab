@@ -1,0 +1,15 @@
+.header {
+    background: brown;
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+
+    .links {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 22px;
+        margin: 20px auto;
+    }
+}
