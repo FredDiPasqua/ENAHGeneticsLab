@@ -17,7 +17,7 @@ const Header = () => {
                 <NavLink className="links" to="/">Inicio</NavLink>
                 <NavLink className="links" to="/about">Acerca de</NavLink>
                 <NavLink className="links" to="/research">Líneas de Investigación</NavLink>
-                <NavLink className="links" to="/miembros">Miembros</NavLink>
+                <NavLink className="links" to="/members">Miembros</NavLink>
                 <NavLink className="links" to="/proyecto">Proyecto Ética de Investigación</NavLink>
 
             </div>

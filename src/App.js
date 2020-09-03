@@ -6,6 +6,7 @@ import "./assets/styles/App.scss";
 import Home from './components/Home';
 import About from './components/About'
 import Research from './components/Research'
+import Members from './components/Members'
 import Layout from './components/Layout';
 
 
@@ -16,6 +17,7 @@ const App = () => (
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/research" component={Research} />
+                <Route exact path="/members" component={Members} />
 
             </Switch>  
         </Layout>

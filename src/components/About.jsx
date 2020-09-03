@@ -1,9 +1,10 @@
 import React from 'react';
+import '../assets/styles/components/About.scss'
 
 const About = () => (
-    <>
-        <h1>About</h1>
-    </>
+    <div className="about">
+        <h1 >About</h1>
+    </div>
 );
 
 export default About;

@@ -5,7 +5,7 @@ import DNA from "../assets/dna.svg";
 
 const ParticlesDNA = () => (
     <>
-        <Particles className="particles"
+        {/* <Particles className="particles"
             params={{
 	            "fps_limit": 28,
 	            "particles": {
@@ -43,7 +43,7 @@ const ParticlesDNA = () => (
 	                "move": {
 	                    "radius": 10
 	                },
-	                "url": "/small-deer.2a0425af.svg",
+	                "url": "../assets/letter.svg",
 	                "inline": {
 	                    "arrangement": "equidistant"
 	                },
@@ -70,7 +70,53 @@ const ParticlesDNA = () => (
 	                }
 	            }
 	        }} 
+        /> */}
+        <Particles className="particles"
+            params={{
+	            "particles": {
+	                "number": {
+	                    "value": 150,
+	                    "density": {
+	                        "enable": true,
+	                        "value_area": 1500
+	                    }
+	                },
+	                "line_linked": {
+	                    "enable": true,
+	                    "opacity": 0.02
+	                },
+	                "move": {
+	                    "direction": "right",
+	                    "speed": 0.05
+	                },
+	                "size": {
+	                    "value": 1
+	                },
+	                "opacity": {
+	                    "anim": {
+	                        "enable": true,
+	                        "speed": 1,
+	                        "opacity_min": 0.05
+	                    }
+	                }
+	            },
+	            "interactivity": {
+	                "events": {
+	                    "onclick": {
+	                        "enable": true,
+	                        "mode": "push"
+	                    }
+	                },
+	                "modes": {
+	                    "push": {
+	                        "particles_nb": 1
+	                    }
+	                }
+	            },
+	            "retina_detect": true
+            }}
         />
+
     </>
 )
 
