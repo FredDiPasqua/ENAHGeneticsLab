@@ -9,7 +9,7 @@ const Header = () => {
         <>
             <div className="header" >
                 <img className="logo" src={logo} alt=""/>
-                <h1 className="title" >Laboratorio de Genetica Molecular</h1>
+                <h1 className="title" >Laboratorio de Genética Molecular</h1>
                 <img className="enah-logo" src={logoEnah} alt=""/>
 
             </div>
