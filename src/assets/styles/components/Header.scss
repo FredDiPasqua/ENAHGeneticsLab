@@ -1,15 +1,47 @@
 .header {
-    background: brown;
+    background: rgba(5, 250, 5, .8);
+    width: auto;
+    position: relative;
+    z-index: 2;
+    .logo {
+        width: 12%;
+        height: 12%;
+        opacity: .9;
+        display: inline-block;
+    }
+    .title {
+        display: inline-block;
+        color: whitesmoke;
+        margin: 0 50px;
+        padding: 0;
+        position: relative;
+        bottom: 55px;
+    }
+    .enah-logo {
+        margin-left: 50px;
+        width: 8%;
+        height: 8%;
+    }
+}
+
+.menu {
+    position: relative;
+    z-index: 2;
+    background: rgba(50, 50, 100, .8);
     justify-self: center;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    width: 12%;
+    // display: flex;
+    float: left;
+    // position: relative;
+    text-align: center;
     color: whitesmoke;
 
     .links {
+        display: block;
         text-decoration: none;
         color: whitesmoke;
-        font-size: 22px;
-        margin: 20px auto;
+        font-size: 18px;
+        margin: 40px auto;
+        padding: 10px;
     }
 }
