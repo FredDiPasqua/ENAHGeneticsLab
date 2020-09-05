@@ -5,11 +5,11 @@ import Card from './Cards';
 
 const Members = () => (
     <div className="members" >
-        <h1>Members</h1>
+        <h1>Miembros</h1>
         <div className="jerarquias">
             <Card
                 class="card_chiefs" 
-                nombre="A.F. Víctor Acuña Alonzo "
+                nombre="  A.F. Víctor Acuña Alonzo  "
                 puesto="Responsable Académico"
                 labor="Profesor Investigador, INAH" 
             />

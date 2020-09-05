@@ -1,33 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;1,700&display=swap');
 
+@mixin card_mixins($width, $height) {
+    position: relative;
+        max-width: $width;
+        height: $height;
+        // background: rgba(20, 20, 70, .9);
+        background: url("https://image.freepik.com/foto-gratis/fondo-textura-papel-arrugado-blanco-cerca_99266-694.jpg");
+
+        background-size: cover;
+        // backdrop-filter: blur(2px);
+        // backdrop-filter: opacity(90%);
+        -webkit-filter: opacity(75%);
+
+        box-shadow: 1px 1px 0px rgb(89, 87, 150),
+                    2px 2px 0px rgb(117, 125, 136),
+                    3px 3px 0px rgb(66, 53, 38),
+                    4px 4px 0px rgb(34, 27, 75),
+                    5px 5px 0px rgb(20, 10, 39),
+                    0 75px 110px rgba( 0, 0, 0, .5);
+        // filter: blur(1px);
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: inline-flex;   //flex
+        flex-direction: column;
+        // box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
+        transition: 0.3s ease-in-out;
+        border-radius: 10px;
+}
+
+@mixin upBox($width, $height) {
+    position: relative;
+    width: $width;
+    height: $height ;
+    top: -60px;
+    margin: auto;
+    // left: 20px;
+    // box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    z-index: 1;
+    background: rgb(30, 107, 134);
+    color: black;
+    font-family: 'Cuprum:ital,wght@0,400;1,700';
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 1px 1px 0px rgb(24, 23, 61),
+                2px 2px 0px rgb(12, 24, 43),
+                // 3px 3px 0px rgb(51, 39, 25),
+                // 4px 4px 0px rgb(67, 55, 134),
+                // 5px 5px 0px rgb(52, 32, 90);
+                0 5px 20px rgba(0,0,0,.2);
+}
+
+%content_at_hover {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.3s;
+}
 
 .container {
     width:50%;
     margin: 0;
     .card_chiefs {
-        position: relative;
-        max-width: 220px;
-        height: 80px;
-        background: rgba(20, 20, 70, .9);
-        margin: 30px 10px;
-        padding: 20px 15px;
-        display: inline-flex;   //flex
-        flex-direction: column;
-        box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
-        transition: 0.3s ease-in-out;
-        border-radius: 20px;
+        @include card_mixins(220px, 80px);
         
         .imgBx {
-            position: relative;
-            width: 200px;
-            height: 100px ;
-            top: -60px;
-            margin: auto;
-            // left: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.2);
-            z-index: 1;
-            background: rgb(120, 150, 120);
-            border-radius: 20px;
-            padding: 1px;
+            @include upBox(200px, 100px);
+            
             .name {
                 max-width: 100%;
                 border-radius: 4px;
@@ -41,120 +79,69 @@
     .card_chiefs:hover {
         height: 220px;
         .content {
-            visibility: visible;
-            opacity: 1;
-            margin-top: -60px;
-            transition-delay: 0.3s;
-
+            @extend %content_at_hover
         }
     }
-    .content {
-        position: relative;
-        margin-top: -80px;
-        padding: 10px 15px;
-        text-align: center;
-        // color: #111;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.3s ease-in-out;
-    }
-    // jerarquias
+
+    // COLABORADORES
     .card_colaboradores {
-        position: relative;
-        max-width: 180px;
-        height: 80px;
-        background: rgba(20, 20, 70, .9);
-        margin: 30px 10px;
-        padding: 20px 15px;
-        display: inline-flex;   //flex
-        flex-direction: column;
-        box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
-        transition: 0.3s ease-in-out;
-        border-radius: 20px;
+        @include card_mixins(180px, 80px);
         
         .imgBx {
-            position: relative;
-            width: 160px;
-            height: 100px ;
-            top: -60px;
-            margin: auto;
-            // left: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.2);
-            z-index: 1;
-            background: rgb(120, 150, 120);
-            border-radius: 20px;
-            padding: 1px;
+            @include upBox(160px, 100px);
+
             .name {
                 max-width: 100%;
                 border-radius: 4px;
                 h1 {
                     font-size: 20px;
                 }
-
             }
         }
     }
     .card_colaboradores:hover {
         height: 200px;
         .content {
-            visibility: visible;
-            opacity: 1;
-            margin-top: -60px;
-            transition-delay: 0.3s;
-
+            @extend %content_at_hover
         }
     }
-    // ULTIMA JERARQUIA
+    // BECARIOS
     .card_becarios {
-        position: relative;
-        max-width: 140px;
-        height: 50px;
-        background: rgba(20, 20, 70, .9);
-        margin: 30px 10px;
-        padding: 20px 15px;
-        display: inline-flex;   //flex
-        flex-direction: column;
-        box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
-        transition: 0.3s ease-in-out;
-        border-radius: 20px;
+        @include card_mixins(140px, 50px);
         
         .imgBx {
-            position: relative;
-            width: 140px;
-            height: 80px ;
-            top: -60px;
-            margin: auto;
-            // left: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.2);
-            z-index: 1;
-            background: rgb(120, 150, 120);
-            border-radius: 20px;
-            padding: 1px;
+            @include upBox(140px, 80px);
+
             .name {
                 max-width: 100%;
                 border-radius: 4px;
                 h1 {
                     font-size: 18px;
                 }
-
             }
         }
     }
     .card_becarios:hover {
         height: 200px;
         .content {
-            visibility: visible;
-            opacity: 1;
-            margin-top: -60px;
-            transition-delay: 0.3s;
+            @extend %content_at_hover;
+
             h3 {
                 font-size: 18px;
             }
-
-
         }
     }
-
-    
-
+    // GENERAL
+    .content {
+        position: relative;
+        margin-top: -80px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        font-family: 'Cuprum';
+        font-style: italic;
+    }
 }
