@@ -9,6 +9,8 @@ import Research from './components/Research'
 import Members from './components/Members'
 import Proyect from './components/Proyect'
 import Layout from './components/Layout';
+import Admin from './components/Admin'
+import NotFound from './components/NotFound'
 
 
 const App = () => (
@@ -20,7 +22,8 @@ const App = () => (
                 <Route exact path="/research" component={Research} />
                 <Route exact path="/members" component={Members} />
                 <Route exact path="/proyect" component={Proyect} />
-
+                <Route exact path="/admin" component={Admin} />
+                <Route path="/" component={NotFound} />
             </Switch>  
         </Layout>
     </BrowserRouter>
