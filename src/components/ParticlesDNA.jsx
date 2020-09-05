@@ -80,23 +80,34 @@ const ParticlesDNA = () => (
 	                        "enable": true,
 	                        "value_area": 1500
 	                    }
-	                },
+					},
+					"color": {
+						"value":"random"
+					},
 	                "line_linked": {
 	                    "enable": true,
-	                    "opacity": 0.02
+						"opacity": 0.08,
+						"color": "#556"
 	                },
 	                "move": {
 	                    "direction": "right",
-	                    "speed": 0.05
+	                    "speed": 1
 	                },
 	                "size": {
-	                    "value": 1
+						"value": 1.5,
+						"random": true,
+      					"anim": {
+        					"enable": false,
+        					"speed": 80,
+        					"size_min": 0.1,
+							"sync": false
+						}
 	                },
 	                "opacity": {
 	                    "anim": {
 	                        "enable": true,
 	                        "speed": 1,
-	                        "opacity_min": 0.07
+	                        "opacity_min": 0.09
 	                    }
 	                }
 	            },

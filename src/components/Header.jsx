@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../assets/styles/components/Header.scss'
 import logo from '../assets/logo.jpg'
-import logoEnah from '../assets/enah-logo.png'
+import logoEnah from '../assets/enah-logo3.png'
 
 const Header = () => {
     return (

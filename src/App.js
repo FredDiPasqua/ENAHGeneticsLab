@@ -4,13 +4,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import "./assets/styles/App.scss";
 import Home from './components/Home';
-import About from './components/About'
-import Research from './components/Research'
-import Members from './components/Members'
-import Proyect from './components/Proyect'
+import About from './components/About';
+import Research from './components/Research';
+import Members from './components/Members';
+import Proyect from './components/Proyect';
 import Layout from './components/Layout';
-import Admin from './components/Admin'
-import NotFound from './components/NotFound'
+import Admin from './components/Admin';
+import NotFound from './components/NotFound';
 
 
 const App = () => (

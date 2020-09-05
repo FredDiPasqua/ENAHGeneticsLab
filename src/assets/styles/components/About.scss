@@ -9,7 +9,8 @@
     text-align: center;
     font-size: 20px;
     background: rgba(0,0,0,.3);
-    color: rgb(196, 192, 148);
+    // background: white;
+    color: rgb(219, 210, 113);
     font-family: 'EB Garamond', serif;
     text-align: justify;
     p{
@@ -20,7 +21,7 @@
     }
     .lab1 {
         display: inline-block;
-        width: 50%;
+        width: 49%;
         position: relative;
         top: -703px;
         // border-right: 1px solid rgb(63, 158, 127);
@@ -29,7 +30,7 @@
     .lab2 {
         display: inline-block;
         width: 48%;
-        border-left: 1px solid rgb(63, 158, 127);
+        border-left: 3px solid rgb(128, 128, 117);
     }
     .vertical-line{
         display: inline-block;

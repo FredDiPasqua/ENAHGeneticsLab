@@ -1,7 +1,7 @@
 
 
 .header {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     width: auto;
     position: relative;
     z-index: 2;
@@ -36,15 +36,15 @@
         }
     }
     .enah-logo {
-        height: 80%;
-        margin: 0 0 10px 100px;
+        height: 100%;
+        margin-left: 45px;
     }
 }
 
 .menu {
     position: relative;
     z-index: 2;
-    background: rgba(185, 215, 185, 0.7);
+    background: rgba(201, 209, 182, 0.7);
     justify-self: center;
     width: 12%;
     // display: flex;
