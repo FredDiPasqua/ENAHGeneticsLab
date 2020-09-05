@@ -3,7 +3,7 @@ import '../assets/styles/components/Cards.scss'
 
 const Card = (props) => (
     <div className="container">
-        <div className="card">
+        <div className={props.class}>
             <div className="imgBx">
                 <div className="name" >
                     <h1>{props.nombre}</h1>

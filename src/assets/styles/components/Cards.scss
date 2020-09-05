@@ -3,8 +3,7 @@
 .container {
     width:50%;
     margin: 0;
-
-    .card {
+    .card_chiefs {
         position: relative;
         max-width: 220px;
         height: 80px;
@@ -16,10 +15,11 @@
         box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
         transition: 0.3s ease-in-out;
         border-radius: 20px;
+        
         .imgBx {
             position: relative;
             width: 200px;
-            height: 150px ;
+            height: 100px ;
             top: -60px;
             margin: auto;
             // left: 20px;
@@ -38,9 +38,8 @@
             }
         }
     }
-    .card:hover {
+    .card_chiefs:hover {
         height: 220px;
-
         .content {
             visibility: visible;
             opacity: 1;
@@ -59,5 +58,103 @@
         opacity: 0;
         transition: 0.3s ease-in-out;
     }
+    // jerarquias
+    .card_colaboradores {
+        position: relative;
+        max-width: 180px;
+        height: 80px;
+        background: rgba(20, 20, 70, .9);
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: inline-flex;   //flex
+        flex-direction: column;
+        box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
+        transition: 0.3s ease-in-out;
+        border-radius: 20px;
+        
+        .imgBx {
+            position: relative;
+            width: 160px;
+            height: 100px ;
+            top: -60px;
+            margin: auto;
+            // left: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.2);
+            z-index: 1;
+            background: rgb(120, 150, 120);
+            border-radius: 20px;
+            padding: 1px;
+            .name {
+                max-width: 100%;
+                border-radius: 4px;
+                h1 {
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+    .card_colaboradores:hover {
+        height: 200px;
+        .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -60px;
+            transition-delay: 0.3s;
+
+        }
+    }
+    // ULTIMA JERARQUIA
+    .card_becarios {
+        position: relative;
+        max-width: 140px;
+        height: 50px;
+        background: rgba(20, 20, 70, .9);
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: inline-flex;   //flex
+        flex-direction: column;
+        box-shadow: 0 75px 110px rgba( 0, 0, 0, .5);
+        transition: 0.3s ease-in-out;
+        border-radius: 20px;
+        
+        .imgBx {
+            position: relative;
+            width: 140px;
+            height: 80px ;
+            top: -60px;
+            margin: auto;
+            // left: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.2);
+            z-index: 1;
+            background: rgb(120, 150, 120);
+            border-radius: 20px;
+            padding: 1px;
+            .name {
+                max-width: 100%;
+                border-radius: 4px;
+                h1 {
+                    font-size: 18px;
+                }
+
+            }
+        }
+    }
+    .card_becarios:hover {
+        height: 200px;
+        .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -60px;
+            transition-delay: 0.3s;
+            h3 {
+                font-size: 18px;
+            }
+
+
+        }
+    }
+
+    
 
 }
