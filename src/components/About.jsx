@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/styles/components/About.scss'
 
 
+
 const About = () => (
     <div className="about">
         <p>...</p>

@@ -1,12 +1,19 @@
 .startHere {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    left: 19.6%;
-    width: 68.9%;
+    // top: -50px;
+    left: 12%;
+    width: 86.1%;
+    // position: absolute;
+    // z-index: 2;
+    // left: 19.6%;
+    // width: 68.9%;
     height: 70vh;
     text-align: center;
     font-size: 40px;
     background: rgba(0,0,0,.4);
-    color: goldenrod;
+    color: rgb(219, 210, 113);
     padding: 10px;
+
+    margin-bottom: 50px;
 }

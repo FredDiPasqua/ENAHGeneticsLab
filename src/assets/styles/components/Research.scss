@@ -2,20 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 .research {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    left: 19.6%;
-    width: 70.4%;
+    left: 12%;
+    width: 84.3%;
+    padding: 20px;
+    margin-bottom: 70px;
+
+
+    // position: absolute;
+    // z-index: 2;
+    // left: 19.6%;
+    // width: 70.4%;
     text-align: center;
     font-size: 20px;
     background: rgba(0,0,0,.3);
-    color: goldenrod;
+    color: rgb(219, 210, 113);
     font-family: 'EB Garamond', serif;
+    h3 {
+        position: relative;
+        top: 20px;
+    }
     p{
+        position: relative;
+        top: 2;
         margin: 50px;
     }
     .link{
+        position: relative;
+        top: 2;
         // text-decoration: none;
-        color: goldenrod
+        color: inherit;
     }
 }
